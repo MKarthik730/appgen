@@ -1,6 +1,6 @@
 import { Config, UIComponent } from '@/types/config'
 
-const BASE_URL = 'http://localhost:8000'
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 let currentConfigId: string | null = null
 
 export function setCurrentConfigId(id: string) {
