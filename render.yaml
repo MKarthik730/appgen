@@ -34,5 +34,4 @@ services:
 databases:
   - name: addo-db
     databaseName: appgen
-    user: postgres
     plan: free
