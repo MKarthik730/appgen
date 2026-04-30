@@ -3,6 +3,13 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
   },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': require('path').join(__dirname, '.'),
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig
