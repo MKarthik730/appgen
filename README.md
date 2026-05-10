@@ -1,13 +1,13 @@
-# AppGen 🚀
+# AppGen 
 
 **Config-driven full-stack application generator** — define your app with a single JSON config and get a fully functional backend + frontend, instantly.
 
 ```json
 {
-  "app": { "name": "Task Manager", "auth": { "enabled": true } },
-  "database": { "tables": [{ "name": "tasks", "fields": [{ "name": "title", "type": "string" }] }] },
-  "ui": [{ "type": "form", "api_binding": "create_task" }],
-  "apis": [{ "path": "/tasks", "method": "GET", "action": "list", "table": "tasks" }]
+"app": { "name": "Task Manager", "auth": { "enabled": true } },
+"database": { "tables": [{ "name": "tasks", "fields": [{ "name": "title", "type": "string" }] }] },
+"ui": [{ "type": "form", "api_binding": "create_task" }],
+"apis": [{ "path": "/tasks", "method": "GET", "action": "list", "table": "tasks" }]
 }
 ```
 
@@ -82,7 +82,7 @@
 └── docker-compose.yml
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 18+
